@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Graduation Poster — gr8graphix</title>
+<meta name="description" content="Design a custom graduation poster with the graduate's name, school, graduation year, and achievements.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="posters">
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="mark">g8</span>
+      gr8graphix
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="posters.html" data-nav="posters">Posters</a>
+      <a href="about.html" data-nav="about">About</a>
+      <a href="contact.html" data-nav="contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="posters.html" class="btn btn-primary">Shop Posters</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-header" style="padding-bottom:0;">
+    <div class="container">
+      <span class="eyebrow">🎓 Graduation Poster</span>
+      <h1>Celebrate their <span class="gradient-text">achievement</span></h1>
+      <p>Fill in the graduate's details below — your poster preview updates as you type.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="buy-layout">
+
+        <div class="buy-preview">
+          <div class="preview-poster grad" data-preview="grad">
+            <div class="top-emoji">🎓</div>
+            <div>
+              <div class="p-name">Graduate's Name</div>
+              <div class="p-line">Class of <span class="p-year">—</span></div>
+              <div class="p-footer">
+                <span><strong>High School:</strong> <span class="p-hs">—</span></span>
+                <span><strong>College:</strong> <span class="p-college">—</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="preview-note">
+            <strong>Live preview.</strong> This is a simplified mockup — your finished poster will feature a
+            full hand-designed layout, and we'll send a digital proof before printing.
+          </div>
+        </div>
+
+        <div>
+          <div class="form-card">
+            <div class="form-note">
+              Starting at <strong>$45</strong>. Submitting this form sends your order details to us —
+              we'll follow up within 1 business day with a design proof and to confirm payment.
+            </div>
+
+            <form id="grad-order-form" novalidate>
+              <fieldset>
+                <legend><span class="badge">1</span> Poster Details</legend>
+
+                <div class="field">
+                  <label for="gradName">Graduate's Name</label>
+                  <input type="text" id="gradName" name="gradName" placeholder="e.g. Jordan Lee" required>
+                </div>
+
+                <div class="form-row">
+                  <div class="field">
+                    <label for="gradYear">Year of Graduation</label>
+                    <input type="number" id="gradYear" name="gradYear" placeholder="2026" min="1950" max="2100" required>
+                  </div>
+                  <div class="field">
+                    <label for="highSchool">High School Name</label>
+                    <input type="text" id="highSchool" name="highSchool" placeholder="Lincoln High School" required>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="college">College / University Name <span class="hint">(optional)</span></label>
+                  <input type="text" id="college" name="college" placeholder="e.g. Duke University">
+                </div>
+
+                <div class="field">
+                  <label for="activities">Activities in High School <span class="hint">(sports, clubs, honors, etc.)</span></label>
+                  <textarea id="activities" name="activities" placeholder="e.g. Varsity Soccer Captain, National Honor Society, Student Council President" required></textarea>
+                </div>
+
+                <div class="field">
+                  <label for="notes">Color / Style Preference <span class="hint">(optional)</span></label>
+                  <textarea id="notes" name="notes" placeholder="Any color palette, school colors, or style requests..."></textarea>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend><span class="badge">2</span> Your Contact Info</legend>
+
+                <div class="form-row">
+                  <div class="field">
+                    <label for="customerName">Your Name</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                  </div>
+                  <div class="field">
+                    <label for="customerEmail">Email</label>
+                    <input type="email" id="customerEmail" name="customerEmail" required>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="customerPhone">Phone <span class="hint">(optional)</span></label>
+                  <input type="tel" id="customerPhone" name="customerPhone" placeholder="(555) 555-5555">
+                </div>
+              </fieldset>
+
+              <button type="submit" class="btn btn-primary btn-block">Submit Order Request</button>
+              <div id="grad-form-status" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <span class="mark">g8</span>
+          <span>gr8graphix</span>
+        </div>
+        <p style="max-width:260px;">Custom graphic design studio specializing in personalized birth and graduation posters.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="posters.html">All Posters</a></li>
+          <li><a href="birth.html">Birth Posters</a></li>
+          <li><a href="graduation.html">Graduation Posters</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:michaelbernier726@gmail.com">michaelbernier726@gmail.com</a></li>
+          <li><a href="contact.html">Send a message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> gr8graphix. All rights reserved.</span>
+      <span>Designed with ♥ for life's biggest moments</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

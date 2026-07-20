@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — gr8graphix</title>
+<meta name="description" content="Get in touch with gr8graphix to ask a question or start a custom birth or graduation poster order.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="mark">g8</span>
+      gr8graphix
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="posters.html" data-nav="posters">Posters</a>
+      <a href="about.html" data-nav="about">About</a>
+      <a href="contact.html" data-nav="contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="posters.html" class="btn btn-primary">Shop Posters</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Get in touch</span>
+      <h1>We'd love to <span class="gradient-text">hear from you</span></h1>
+      <p>Questions about an order, custom requests, or anything else — send us a message and we'll get back to you within 1 business day.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info-card">
+          <h3>Contact Information</h3>
+          <p>Reach out directly, or use the form and we'll follow up by email.</p>
+
+          <div class="contact-item">
+            <span class="icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <span><a href="mailto:michaelbernier726@gmail.com" style="color:inherit;">michaelbernier726@gmail.com</a></span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="icon">📍</span>
+            <div>
+              <strong>Based in</strong>
+              <span>United States · Shipping nationwide</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="icon">⏱️</span>
+            <div>
+              <strong>Response time</strong>
+              <span>Within 1 business day</span>
+            </div>
+          </div>
+
+          <h4 style="color:#fff; margin-top:34px;">Follow along</h4>
+          <div class="social-row">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Pinterest">📌</a>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone <span class="hint">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            <div id="contact-form-status" class="form-status"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <span class="mark">g8</span>
+          <span>gr8graphix</span>
+        </div>
+        <p style="max-width:260px;">Custom graphic design studio specializing in personalized birth and graduation posters.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="posters.html">All Posters</a></li>
+          <li><a href="birth.html">Birth Posters</a></li>
+          <li><a href="graduation.html">Graduation Posters</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:michaelbernier726@gmail.com">michaelbernier726@gmail.com</a></li>
+          <li><a href="contact.html">Send a message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> gr8graphix. All rights reserved.</span>
+      <span>Designed with ♥ for life's biggest moments</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

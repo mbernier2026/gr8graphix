@@ -287,7 +287,41 @@ img { max-width: 100%; display: block; }
   opacity: 0.85;
 }
 
-.poster-card .big-emoji { font-size: 2.6rem; }
+/* ---------- Photo placeholders ---------- */
+/* Stand-ins for real photography. Swap the <div class="photo-placeholder"> in
+   the HTML for an <img> once real poster photos are ready. */
+.photo-placeholder {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 2px dashed rgba(255,255,255,0.55);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.85);
+  flex-shrink: 0;
+}
+
+.photo-placeholder span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: inherit;
+}
+
+.photo-placeholder--sm { width: 56px; height: 56px; }
+.photo-placeholder--sm svg { width: 22px; height: 22px; }
+.photo-placeholder--sm span { display: none; }
+
+.photo-placeholder--md { width: 76px; height: 76px; }
+.photo-placeholder--md svg { width: 28px; height: 28px; }
+.photo-placeholder--md span { font-size: 0.52rem; }
+
+.photo-placeholder--lg { width: 108px; height: 108px; }
+.photo-placeholder--lg svg { width: 38px; height: 38px; }
+.photo-placeholder--lg span { font-size: 0.6rem; }
 
 .poster-card .name {
   font-family: 'Poppins', sans-serif;
@@ -377,8 +411,6 @@ section { padding: 80px 0; }
 .option-banner.birth { background: linear-gradient(135deg, #bfe3f7, var(--carolina)); }
 .option-banner.grad { background: linear-gradient(135deg, var(--carolina), var(--navy)); }
 
-.option-banner .emoji { font-size: 4rem; }
-
 .option-body { padding: 30px; flex: 1; display: flex; flex-direction: column; }
 
 .option-price {
@@ -446,8 +478,6 @@ section { padding: 80px 0; }
 
 .preview-poster.birth { background: linear-gradient(165deg, #bfe3f7 0%, var(--carolina) 100%); }
 .preview-poster.grad { background: linear-gradient(165deg, var(--carolina) 0%, var(--navy) 100%); }
-
-.preview-poster .top-emoji { font-size: 2.8rem; }
 
 .preview-poster .p-name {
   font-family: 'Poppins', sans-serif;
